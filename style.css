@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    /* background-color: hsla(0, 3%, 27%, 0.932); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    z-index: 300;
+}
+.nav-list{
+    /* background-color: hsla(0, 3%, 27%, 0.932); */
+ width: 50%;
+ display: flex;
+ align-items: center;
+}
+.nav-list ul{
+    padding: 5px 4px;
+}
+.nav-list li{
+    list-style: none;
+    padding: 12px 19px;
+    font-size: 20px;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    
+}
+.nav-list li a:hover{
+    color:coral;
+}
+.logo{
+    padding: 4px 8px;
+   /* width: 20%; */
+   display: flex;
+   align-items: center;
+}
+
+.logo img{
+    width: 56px;
+    height: 56px;
+    /* margin-left: 16px; */
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.nav-right{
+    text-align: right;
+    /* background-color: hsla(0, 3%, 27%, 0.932); */
+    width: 50%;
+    display: flex;
+    align-items: center;
+   justify-content: flex-end;
+}
+#search{
+    padding: 4px;
+    font-size: 12px;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+.search-btn{
+    background: none;
+    font-size: small;
+    color: white;
+    padding: 3px 12px;
+    margin: 0px 7px;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+.search-btn:hover{
+    background-color: coral;
+    color: black;
+}
+
+/* home section css*/
+
+.background{
+    background: url(img/bean.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    
+}
+.content{
+    height: 80vh;
+    opacity: 0.7;
+}
+.mainbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70%;
+    margin: auto;
+    height: 83%;
+}
+.content-right img{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 50%;
+    /* margin-top: 10px; */
+    display: block;
+    margin: auto;
+}
+.content-left{
+    width:80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+.content-right{
+    width: 30%;
+    
+}
+.content-left h1{
+    padding: 5px 0;
+    font-size: 34px;
+    text-align: left;
+    font-family: sans-serif;
+}
+.content-left p{
+    padding: 5px 0;
+    font-size: 18px;
+}
+.buttons{
+    padding: 5px, 0;
+}
+.btn{
+    border: 2px solid black;
+    padding: 5px 7px;
+    background-color: coral;
+    margin-right: 6px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* services section css */
+.center{
+    text-align: center;
+}
+.heading{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 9px 0;
+    margin: 10px 0;
+}
+#services{
+    margin: 0 30px;
+    display: flex;
+    overflow: hidden;
+}
+#services .box{
+    border: 1px solid black;
+    padding: 13px 11px;
+    margin: 13px 7px;
+    border-radius: 23px;
+    background-color: rgb(250, 247, 243);
+}
+.box img{
+    height: 220px;
+    display: block;
+    margin: auto;
+}
+.subtag{
+    text-align: justify;
+}
+.tag{
+    font-family: sans-serif;
+}
+
+.star{
+    text-align: center;
+    padding: 5px 0;
+    background-color: white;
+    width: 111px;
+    display: block;
+    margin: auto;
+}
+.checked{
+    color: rgb(248, 165, 10);
+}
+
+/*about us section css*/
+.client{
+    position: relative;
+}
+.client-heading{
+    text-align: center;
+    font-size: 31px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 0;
+}
+
+/*using pseudo selector*/
+.client:before{
+    content: "";
+    position: absolute;
+    background: url(img/floral.jpg);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+.client-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;/*this is a JACKPOT(aligned all the image) alag hi swag h iska*/
+}
+.client-box img{
+    height: 121px;
+}
+.client-item{
+    padding: 27px;
+}
+
+/*contact section css*/
+.contact{
+    background-color: rgb(250, 247, 243);
+    height: 500px;
+}
+.contact-heading{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 0;
+}
+.form,.contact-btn{
+    max-width: 65%;
+    margin: auto;
+}
+.form input,textarea{
+    width: 100%;
+    font-size: 15px;
+    padding: 3px;
+    border: 2px solid grey;
+    border-radius: 4px;
+    margin: 2px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.form p{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 18px;
+    margin-top: 5px;
+}
+.contact-btn{
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.footer{
+    height: 50px;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-text{
+    color: white;
+    font-size: 19px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*hamburger navigation*/
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    top: 15px;
+    display: none;
+}
+.line{
+    width: 30px;
+    background-color: white;
+    height: 2px;
+    margin: 5px;
+}
