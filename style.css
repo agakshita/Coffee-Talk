@@ -149,6 +149,9 @@ html{
 .center{
     text-align: center;
 }
+.main-content{
+    background-color: whitesmoke;
+}
 .heading{
     font-size: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -159,13 +162,14 @@ html{
     margin: 0 30px;
     display: flex;
     overflow: hidden;
+    /* background-color: rgb(248, 248, 248); */
 }
 #services .box{
     border: 1px solid black;
     padding: 13px 11px;
     margin: 13px 7px;
     border-radius: 23px;
-    background-color: rgb(250, 247, 243);
+    background-color: white;
 }
 .box img{
     height: 220px;
@@ -228,7 +232,7 @@ html{
 
 /*contact section css*/
 .contact{
-    background-color: rgb(250, 247, 243);
+    background-color: whitesmoke;
     height: 500px;
 }
 .contact-heading{
